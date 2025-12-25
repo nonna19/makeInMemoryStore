@@ -20,7 +20,7 @@ console.log('🔧 Baileys makeInMemoryStore Fix - Injecting files...')
 
 try {
   const nodeModulesPath = findNodeModules()
-  const targetDir = path.join(nodeModulesPath, '@whiskeysockets', 'baileys', 'lib', 'Store')
+  const targetDir = path.join(nodeModulesPath, '@adiwajshing', 'baileys', 'lib', 'Store')
   
   // Create directory if it doesn't exist
   fs.mkdirSync(targetDir, { recursive: true })
@@ -63,9 +63,9 @@ try {
 
   // Update Baileys main index to export makeInMemoryStore
   const possibleIndexPaths = [
-    path.join(nodeModulesPath, '@whiskeysockets', 'baileys', 'lib', 'index.js'),
-    path.join(nodeModulesPath, '@whiskeysockets', 'baileys', 'index.js'),
-    path.join(nodeModulesPath, '@whiskeysockets', 'baileys', 'dist', 'index.js')
+    path.join(nodeModulesPath, '@adiwajshing', 'baileys', 'lib', 'index.js'),
+    path.join(nodeModulesPath, '@adiwajshing', 'baileys', 'index.js'),
+    path.join(nodeModulesPath, '@adiwajshing', 'baileys', 'dist', 'index.js')
   ]
   
   let indexUpdated = false
